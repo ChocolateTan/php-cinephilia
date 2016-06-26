@@ -1,0 +1,45 @@
+body{ padding: 0 0 0 0; margin: 0 0 0 0; font-family: Microsoft YaHei; font-size: 1rem; color: #000000;}
+a{text-decoration: none;}
+a:link{text-decoration: none;}
+h1,h2,h3,h4,h5,h6{ margin: 10px 0 10px 0;}
+.div_header{ text-align: center; padding-top: 20px; padding-bottom: 20px;}
+.div_menu{ text-align: center;}
+.div_menu ul{margin:0 0 20px 0; padding:0 0 0 0;}
+.div_menu ul li{list-style-type:none; display:inline; font-size: 0.6rem; }
+.div_menu ul li a{margin-left: 5px; margin-right: 5px;}
+a, .a_menu{color: #000000;}
+.div_scroll{ text-align: center; background-color: #000000; height: 500px; position: relative; }
+.div_scroll_hight_light{ overflow: hidden; white-space:nowrap; width: 1000px; margin: 0 auto; }
+.div_content{ text-align: center; margin-top: 40px; }
+.div_row{ width: 1000px; margin: 0 auto; margin-bottom: 50px;}
+.div_column{ width: 33%; display: inline-block; vertical-align: top; position: relative;}
+.div_cell{ width: 300px; text-align: left; margin:0 auto;}
+.div_cell img{ width: 300px; height: 170px;}
+.div_cell p{ font-size: 0.85rem; line-height: 180%;}
+.div_cell div, .div_cell div a{ font-size: 0.6rem; text-align: left; line-height: 2; color: #ccc; line-height: 150%;}
+.div_border{ border:1px solid #000000; border-left:none; border-right:none; font-size: 0.8rem; text-align: center;}
+.div_border a{ margin-left: 20px; margin-right: 20px; }
+.div_border_content{ width: 1000px; padding-top: 20px; padding-bottom: 20px; margin: 0 auto; text-align: left;}
+.div_footer{ padding-top: 50px; padding-bottom: 50px; text-align: center; font-size: 0.9rem; }
+
+img { border: 0px; }
+.bannerbox { width: 1000px; height: 500px; overflow: hidden; margin: 0px auto; }
+#focus { width: 1000px; height: 500px; clear: both; overflow: hidden; position: relative; float: left; }
+#focus ul { width: 1000px; height: 500px; float: left; position: absolute; clear: both; padding: 0px; margin: 0px; }
+#focus ul li { float: left; width: 1000px; height: 500px; overflow: hidden; position: relative; padding: 0px; margin: 0px; }
+#focus .preNext { width: 550px; height: 500px; position: absolute; top: 0px; cursor: pointer; }
+#focus .pre { left: 0; background: url(../img/sprite.png) no-repeat left center; width: 45px; }
+#focus .next { right: 0; background: url(../img/sprite1.png) no-repeat right center; width: 45px; }
+
+.bode_admin {padding: 10px 10px 10px 10px;}
+.div_admin_menu ul{margin:0 0 20px 0; padding:0 0 0 0;}
+.div_admin_menu ul li{list-style-type:none; display:inline; font-size: 0.6rem; }
+.div_admin_menu ul li a{margin-left: 5px; margin-right: 5px;}
+
+
+/*test css*/
+.test_div_img_content{margin:0 0 0 0; padding:0 0 0 0;}
+.test_div_img_content{ overflow: hidden; white-space:nowrap; width: 1000px; }
+.test_img{width: 1000px; height: 500px; }
+.test_div_img_content li{list-style-type:none; display:inline; position: absolute;}
+
