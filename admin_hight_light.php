@@ -15,63 +15,51 @@
 include "db/sqladapter.php";
 $sqladapter = new sqladapter();
 ?>
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST"){
-	$sqladapter->add_menu($_POST["menu_name"]);
-}
-?>
+
 <body class="bode_admin">
 	<p>
 		<form  action="" method="post">
-			菜单名称：<input type="textbox" name="menu_name">
+			<p>文章图片：<input type="file" name="menu_file"></p>
+			<p>文章序号：<input type="textbox" name="menu_index"></p>
+			<p>文章连接：<input type="textbox" name="menu_name"></p>
 			<input type="submit" name="" value="add">
 		</form>
 	</p>
 	<p>
 		<?php
-		$menuList = $sqladapter->get_menu_desc();
-
 		echo "<table border=\"1\";>";
 		echo "<th>";
-		echo "menu_id";
+		echo "序号";
 		echo "</th>";
 		echo "<th>";
-		echo "menu_name";
+		echo "图片";
 		echo "</th>";
 		echo "<th>";
-		echo "menu_node";
-		echo "</th>";
-		echo "<th>";
-		echo "state";
+		echo "文章连接";
 		echo "</th>";
 		echo "<th>";
 		echo "";
 		echo "</th>";
 
-		foreach ($menuList as $value) {
-			echo "<tr>";
-			echo "<td>";
-			echo $value["menu_id"];
-			echo "</td>";
-			echo "<td>";
-			echo $value["menu_name"];
-			echo "</td>";
-			echo "<td>";
-			echo $value["menu_node"];
-			echo "</td>";
-			echo "<td>";
-			echo $value["state"];
-			echo "</td>";
-			echo "<td>";
-			echo "<a href=''>Edit</a>";
-			echo "&nbsp";
-			echo "&nbsp";
-			echo "<a href='javascript:(0);' onclick='delete_menu(".$value["menu_id"].");'>Delete</a>";
-			echo "</tr>";
-		}
+			// foreach ($menuList as $value) {
+			// 	echo "<tr>";
+			// 	echo "<td>";
+			// 	echo $value["menu_id"];
+			// 	// echo "<input type='hidden' name='menu_id'  value=".$value["menu_id"].">";
+			// 	echo "</td>";
+			// 	echo "<td>";
+			// 	// echo "<input type='textbox' name='menu_name'  value=".$value["menu_name"].">";
+			// 	echo "</td>";
+			// 	echo "<td>";
+			// 	// echo "<input type='textbox' name='menu_node'  value=".$value["menu_node"].">";
+			// 	echo "</td>";
+			// 	echo "<td>";
+			// 	echo "<input type='submit'  value='save'>";
+			// 	echo "</td>";
+			// 	echo "</tr>";
+			// }
 
 		echo "</table>";
-		?>
-	</p>
-</body>
-</html>
+		?></p>
+	</body>
+	</html>

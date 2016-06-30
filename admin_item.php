@@ -11,7 +11,7 @@
 	
 	<ul>
 		<li><a href="admin_menu.php" target="showframe">菜单管理</a></li>
-		<li><a href="admin_hight_light" target="showframe">滚动图片</a></li>
+		<li><a href="admin_hight_light.php" target="showframe">滚动图片</a></li>
 		<li><a href="admin_article" target="showframe">文章管理</a></li>
 	</ul>
 </body>
