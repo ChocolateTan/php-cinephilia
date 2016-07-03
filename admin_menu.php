@@ -4,9 +4,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
 	<title>Cinephilia迷影</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
 
-	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="public/js/jquery.min.js"></script>
 	<script type="text/javascript">
 		function delete_menu(menu_id){
 			// alert("ss");
@@ -54,6 +54,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 		echo "<th>";
 		echo "";
 		echo "</th>";
+		echo "<th>";
+		echo "";
+		echo "</th>";
 
 		foreach ($menuList as $value) {
 			echo "<tr>";
@@ -71,9 +74,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 			echo "</td>";
 			echo "<td>";
 			echo "<a href='javascript:(0);' onclick='edit_menu(".$value["menu_id"].");'>Edit</a>";
-			echo "&nbsp";
-			echo "&nbsp";
+			echo "</td>";
+			echo "<td>";
 			echo "<a href='javascript:(0);' onclick='delete_menu(".$value["menu_id"].");'>Delete</a>";
+			echo "</td>";
 			echo "</tr>";
 		}
 
