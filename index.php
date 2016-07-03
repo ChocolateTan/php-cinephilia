@@ -4,8 +4,8 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
 	<title>Cinephilia迷影</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
+	<script type="text/javascript" src="public/js/jquery.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
 			var sWidth = $("#focus").width();
@@ -79,11 +79,11 @@
 		<div class="bannerbox">
 			<div id="focus">
 				<ul>
-					<li><a href="img/1-1000x500.jpg" target="_blank"><img src="img/1-1000x500.jpg" alt="" /></a></li>
-					<li><a href="img/2-1000x500.jpg" target="_blank"><img src="img/2-1000x500.jpg" alt="" /></a></li>
-					<li><a href="img/3-1000x500.jpg" target="_blank"><img src="img/3-1000x500.jpg" alt="" /></a></li>
-					<li><a href="img/4-1000x500.jpg" target="_blank"><img src="img/4-1000x500.jpg" alt="" /></a></li>
-					<li><a href="img/5-1000x500.jpg" target="_blank"><img src="img/5-1000x500.jpg" alt="" /></a></li>
+					<li><a href="public/img/1-1000x500.jpg" target="_blank"><img src="public/img/1-1000x500.jpg" alt="" /></a></li>
+					<li><a href="public/img/2-1000x500.jpg" target="_blank"><img src="public/img/2-1000x500.jpg" alt="" /></a></li>
+					<li><a href="public/img/3-1000x500.jpg" target="_blank"><img src="public/img/3-1000x500.jpg" alt="" /></a></li>
+					<li><a href="public/img/4-1000x500.jpg" target="_blank"><img src="public/img/4-1000x500.jpg" alt="" /></a></li>
+					<li><a href="public/img/5-1000x500.jpg" target="_blank"><img src="public/img/5-1000x500.jpg" alt="" /></a></li>
 				</ul>
 			</div>
 		</div>
