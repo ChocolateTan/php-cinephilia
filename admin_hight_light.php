@@ -4,11 +4,13 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
 	<title>Cinephilia迷影</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="public/css/style.css">
 
-	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="public/js/jquery.min.js"></script>
 	<script type="text/javascript">
-		
+		function go_to_add(){
+			widows.
+		}
 	</script>
 </head>
 <?php 
@@ -18,12 +20,7 @@ $sqladapter = new sqladapter();
 
 <body class="bode_admin">
 	<p>
-		<form  action="" method="post">
-			<p>文章图片：<input type="file" name="menu_file"></p>
-			<p>文章序号：<input type="textbox" name="menu_index"></p>
-			<p>文章连接：<input type="textbox" name="menu_name"></p>
-			<input type="submit" name="" value="add">
-		</form>
+		<input type="button" name="" value="add">
 	</p>
 	<p>
 		<?php
@@ -32,10 +29,13 @@ $sqladapter = new sqladapter();
 		echo "序号";
 		echo "</th>";
 		echo "<th>";
-		echo "图片";
+		echo "文章标题";
 		echo "</th>";
 		echo "<th>";
-		echo "文章连接";
+		echo "";
+		echo "</th>";
+		echo "<th>";
+		echo "";
 		echo "</th>";
 		echo "<th>";
 		echo "";
