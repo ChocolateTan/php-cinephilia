@@ -18,7 +18,11 @@
 			// alert('3:'+article_content);
 			$.ajax({ //一个Ajax过程
 				type: "post", //以post方式与后台沟通
+<<<<<<< HEAD
 			    url : "admin_article_post.php", //与此php页面沟通
+=======
+			    url : "admin_article_add_submit.php", //与此php页面沟通
+>>>>>>> eb06b3ee32b7f98a02557854459c997ab5f0fa4e
 			    dataType:'json',//从php返回的值以 JSON方式 解释
 			    data: 
 			    {node:article_node,title:article_title,content:article_content}, 

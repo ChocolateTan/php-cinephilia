@@ -62,6 +62,7 @@ class sqladapter{
 		 // echo $sql;
 		return $dbconn->queryRows($sql);
 	}
+<<<<<<< HEAD
 
 	public function get_article_by_id($id){
 		$dbconn = new dbhelper();
@@ -70,5 +71,7 @@ class sqladapter{
 		 // echo $sql;
 		return $dbconn->queryRows($sql);
 	}
+=======
+>>>>>>> eb06b3ee32b7f98a02557854459c997ab5f0fa4e
 }
 ?>
