@@ -62,5 +62,13 @@ class sqladapter{
 		 // echo $sql;
 		return $dbconn->queryRows($sql);
 	}
+
+	public function get_article_by_id($id){
+		$dbconn = new dbhelper();
+		$sql = "SELECT * FROM `tb_article` WHERE delete_or_not = false and article_id ='".$id."' ORDER BY create_date DESC;";
+		//"INSERT INTO Persons (FirstName, LastName, Age) VALUES ('Peter', 'Griffin', '35')"
+		 // echo $sql;
+		return $dbconn->queryRows($sql);
+	}
 }
 ?>

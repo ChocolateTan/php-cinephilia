@@ -40,6 +40,12 @@ $sqladapter = new sqladapter();
 		echo "<th>";
 		echo "修改时间";
 		echo "</th>";
+		echo "<th>";
+		echo "";
+		echo "</th>";
+		echo "<th>";
+		echo "";
+		echo "</th>";
 
 		$list = $sqladapter->get_article();
 
@@ -62,6 +68,12 @@ $sqladapter = new sqladapter();
 			echo "</td>";
 			echo "<td>";
 			echo $value["modify_date"];
+			echo "</td>";
+			echo "<td>";
+			echo "<a href='javascript:(0);' onclick='edit_menu(".$value["article_id"].");'>Edit</a>";
+			echo "</td>";
+			echo "<td>";
+			echo "<a href='javascript:(0);' onclick='delete_article(".$value["article_id"].");'>Delete</a>";
 			echo "</td>";
 			echo "</tr>";
 		}

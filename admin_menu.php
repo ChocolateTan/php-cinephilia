@@ -10,7 +10,10 @@
 	<script type="text/javascript">
 		function delete_menu(menu_id){
 			// alert("ss");
-			window.location.href="admin_menu_delete.php?menu_id="+menu_id;
+			var se=confirm("是否删除？");
+			if (se==true){
+				window.location.href="admin_menu_delete.php?menu_id="+menu_id;
+			}
 		}
 		function edit_menu(menu_id){
 			// alert("ss");
