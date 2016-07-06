@@ -38,29 +38,37 @@
 	</script>
 </head> 
 
+<?php 
+include "db/sqladapter.php";
+$sqladapter = new sqladapter();
+?>
 <body class="bode_admin">
-	<p id="p_result"></p>
-	<!-- <form action="" method="post"> -->
-	<p>文章标题：<input type="text" id="title"></p>
-	<p>分类：<input type="text" id="node"></p>
-	<p>
-		<!-- 加载编辑器的容器 -->
-		<!-- 以下脚本中增加文本为初始化内容 -->
-		<script id="container" type="text/plain" style="width:100%;height:500px;">
+	<?php
+	$articleList = $sqladapter->get_article_by_id($_GET['article_id']);
 
-		</script>
-		<!-- 配置文件 -->
-		<script type="text/javascript" src="public/ueditor/ueditor.config.js"></script>
-		<!-- 编辑器源码文件 -->
-		<script type="text/javascript" src="public/ueditor/ueditor.all.js"></script>
-		<!-- 实例化编辑器 -->
-		<script type="text/javascript">
-			var ue = UE.getEditor('container');
-		</script>
-	</p>
-	<p>
-		<input type="button" name="save" onclick="submit_article();" value="save" />
-	</p>
-	<!-- </form> -->
+	//echo "<p>编号：<input type='text' id='node' value='".$articleList['article_id']."'></p>";
+	echo "<p>标题：<input type='text' id='node' value='".$articleList['title']."'></p>";
+	echo "<p>分类：<input type='text' id='node' value='".$articleList['node_id']."'></p>";
+	echo "<p>";
+		// <!-- 加载编辑器的容器 -->
+		// <!-- 以下脚本中增加文本为初始化内容 -->
+	echo "<script id='container' type='text/plain' style='width:100%;height:500px;'>";
+
+	echo "</script>";
+		// <!-- 配置文件 -->
+	echo "<script type='text/javascript' src='public/ueditor/ueditor.config.js'></script>";
+		// <!-- 编辑器源码文件 -->
+	echo "<script type='text/javascript' src='public/ueditor/ueditor.all.js'></script>";
+		// <!-- 实例化编辑器 -->
+	echo "<script type='text/javascript'>";
+	echo "var ue = UE.getEditor('container');";
+	echo "ue.addListener('ready', function () {ue.setContent('".$articleList['content']."');});";
+	// echo "ue.setContent('".$articleList['content']."');";
+	echo "</script>";
+	echo "</p>";
+	echo "<p>";
+	echo "<input type='button' name='save' onclick='submit_article();' value='save' />";
+	echo "</p>";
+	?>
 </body>
 </html>

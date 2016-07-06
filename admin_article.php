@@ -11,6 +11,12 @@
 		function go_to_add(){
 			location.href="admin_article_add.php";
 		}
+		function edit_article(article_id){
+			location.href="admin_article_edit.php?article_id=" + article_id;
+		}
+		function delete_article(article_id){
+			location.href="admin_article_delet.php";
+		}
 	</script>
 </head>
 <?php 
@@ -26,13 +32,13 @@ $sqladapter = new sqladapter();
 		<?php
 		echo "<table border=\"1\";>";
 		echo "<th>";
-		echo "文章编号";
+		echo "编号";
 		echo "</th>";
 		echo "<th>";
 		echo "分类";
 		echo "</th>";
 		echo "<th>";
-		echo "文章标题";
+		echo "标题";
 		echo "</th>";
 		echo "<th>";
 		echo "创建时间";
@@ -40,15 +46,12 @@ $sqladapter = new sqladapter();
 		echo "<th>";
 		echo "修改时间";
 		echo "</th>";
-<<<<<<< HEAD
 		echo "<th>";
 		echo "";
 		echo "</th>";
 		echo "<th>";
 		echo "";
 		echo "</th>";
-=======
->>>>>>> eb06b3ee32b7f98a02557854459c997ab5f0fa4e
 
 		$list = $sqladapter->get_article();
 
@@ -72,15 +75,12 @@ $sqladapter = new sqladapter();
 			echo "<td>";
 			echo $value["modify_date"];
 			echo "</td>";
-<<<<<<< HEAD
 			echo "<td>";
-			echo "<a href='javascript:(0);' onclick='edit_menu(".$value["article_id"].");'>Edit</a>";
+			echo "<a href='javascript:(0);' onclick='edit_article(".$value["article_id"].");'>Edit</a>";
 			echo "</td>";
 			echo "<td>";
 			echo "<a href='javascript:(0);' onclick='delete_article(".$value["article_id"].");'>Delete</a>";
 			echo "</td>";
-=======
->>>>>>> eb06b3ee32b7f98a02557854459c997ab5f0fa4e
 			echo "</tr>";
 		}
 
