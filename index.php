@@ -92,7 +92,7 @@
 		<div class="div_row">
 			<div class="div_column">
 				<div class="div_cell">
-					<img src="img/3-460x261.jpg">
+					<img src="public/img/3-460x261.jpg">
 					<h4><a>悲情城市：雨港基隆的真实与虚幻</a></h4>
 					<p>这则政治寓言的尾声，摄影师林文清与吴宽美自拍了一张全家福，镜头停格一瞬，静止的团圆照，预告了无从选择的凄楚命运。<a href="">[...]</a></p>
 					<div>04月14日, 2016 | <a href="">No Comments on 悲情城市：雨港基隆的真实与虚幻</a></div>
@@ -101,7 +101,7 @@
 
 			<div class="div_column">
 				<div class="div_cell">
-					<img src="img/6-460x261.jpg">
+					<img src="public/img/6-460x261.jpg">
 					<h4><a>《无用》：空间、风格与劳动</a></h4>
 					<p>作为艺术家三部曲之一的《无用》是贾樟柯又一次站在当下语境中，准确地把握住了现实正在激变的部分，通过“结构”保持着一种“电影 <a href="">[...]</a></p>
 					<div>04月15日, 2016 | <a href="">No Comments on 《无用》：空间、风格与劳动</a></div>
@@ -110,7 +110,7 @@
 
 			<div class="div_column">
 				<div class="div_cell">
-					<img src="img/5-460x261.jpg">
+					<img src="public/img/5-460x261.jpg">
 					<h4><a>【BJIFF｜大师映像】：爱上电影，从爱上比利·怀尔德开始</a></h4>
 					<p>怀尔德是经典叙事方式的集大成者。对他而言，电影在于重现现实，但又要是平时人们在现实中体会不到的经验。<a href="">[...]</a></p>
 					<div>04月11日, 2016 | <a href="">No Comments on 【BJIFF｜大师映像】：爱上电影，从爱上比利·怀尔德开始</a></div>
@@ -120,7 +120,7 @@
 		<div class="div_row">
 			<div class="div_column">
 				<div class="div_cell">
-					<img src="img/2-460x261.jpg">
+					<img src="public/img/2-460x261.jpg">
 					<h4><a>杜可风：牛仔永远孤独</a></h4>
 					<p>香港，其实算是我的家。心在哪儿，家就在哪儿，在那里拍的电影，故事都从那里来。<a href="">[...]</a></p>
 					<div>10月6日, 2015 | <a href="">No Comments on 悲情城市：雨港基隆的真实与虚幻</a></div>
@@ -129,7 +129,7 @@
 
 			<div class="div_column">
 				<div class="div_cell">
-					<img src="img/4-460x261.jpg">
+					<img src="public/img/4-460x261.jpg">
 					<h4><a>埃尼奥·莫里康内：让演奏的音乐家承受暴力场景受害者一样的苦难（作者：Tim Jonze）</a></h4>
 					<p>“我在昆汀完全不知情的情况下创作配乐，然后他来布拉格时我正在录音，他也非常满意。所以这次合作对我来说是建立在信任和极大的<a href="">[...]</a></p>
 					<div>03月8日, 2016 | <a href="">No Comments on 埃尼奥·莫里康内：</a></div>
@@ -137,7 +137,7 @@
 			</div>
 			<div class="div_column">
 				<div class="div_cell">
-					<img src="img/1-460x261.jpg">
+					<img src="public/img/1-460x261.jpg">
 					<h4><a>王小帅专访：大语境里被屏蔽掉的，不能在个人的生活里消失</a></h4>
 					<p>一个人当下的表达总与过去的生命经验相关，正如一个导演的创作气质总能在成长脉络里找到依稀的线索。<a href="">[...]</a></p>
 					<div>04月14日, 2016 | <a href="">No Comments on 王小帅专访：大语境里被屏蔽掉的，不能在个人的生活里消失</a></div>

@@ -15,7 +15,10 @@
 			location.href="admin_article_edit.php?article_id=" + article_id;
 		}
 		function delete_article(article_id){
-			location.href="admin_article_delet.php";
+			var se=confirm("是否删除？");
+			if (se==true){
+				location.href="admin_article_delete.php?article_id=" + article_id;
+			}
 		}
 	</script>
 </head>

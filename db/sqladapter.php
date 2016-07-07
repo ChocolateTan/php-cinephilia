@@ -69,5 +69,21 @@ class sqladapter{
 		 // echo $sql;
 		return $dbconn->queryRow($sql);
 	}
+
+	public function update_article_to_delete($article_id){
+		$dbconn = new dbhelper();
+		$sql = "UPDATE tb_article SET delete_or_not = true WHERE article_id='".$article_id."'";
+		//"INSERT INTO Persons (FirstName, LastName, Age) VALUES ('Peter', 'Griffin', '35')"
+		// echo $sql;
+		return $dbconn->update($sql);
+	}
+
+	public function update_article_to_delete($node_id, $title, $content){
+		$dbconn = new dbhelper();
+		$sql = "UPDATE tb_article SET node_id = $node_id, title = $title, content = $content, modify_date = CURRENT_TIMESTAMP WHERE article_id='".$article_id."'";
+		//"INSERT INTO Persons (FirstName, LastName, Age) VALUES ('Peter', 'Griffin', '35')"
+		// echo $sql;
+		return $dbconn->update($sql);
+	}
 }
 ?>
