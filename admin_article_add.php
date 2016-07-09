@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -17,23 +16,24 @@
 			// alert('2:'+article_title);
 			// alert('3:'+article_content);
 			$.ajax({ //一个Ajax过程
-				type: "post", //以post方式与后台沟通
+				type: "POST", //以post方式与后台沟通
 			    url : "admin_article_add_submit.php", //与此php页面沟通
-			    dataType:'json',//从php返回的值以 JSON方式 解释
+			    dataType:"json",//从php返回的值以 JSON方式 解释
 			    data: 
 			    {node:article_node,title:article_title,content:article_content}, 
 			    //发给php的数据有两项，分别是上面传来的u和p
 			    success: function(data){//如果调用php成功
-			    	if(data.status == 0){
+			    	if(data.status == 1){
 			    		alert(data.info);
 			    	}else{
 			    		alert(data.info);
 			    	}
 			    },
-			    error: function(){  
-			    	alert('Error loading');  
-			    }
-			});
+			    error: function(XMLHttpRequest, textStatus, errorThrown) {
+			    	alert(XMLHttpRequest.status);
+			    	alert(XMLHttpRequest.readyState);
+			    	alert(textStatus);
+			    }})
 		}
 	</script>
 </head> 
