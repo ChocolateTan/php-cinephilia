@@ -18,7 +18,7 @@
 			$.ajax({ //一个Ajax过程
 				type: "POST", //以post方式与后台沟通
 			    url : "admin_article_add_submit.php", //与此php页面沟通
-			    dataType:"json",//从php返回的值以 JSON方式 解释
+			    // dataType:"json",//从php返回的值以 JSON方式 解释
 			    data: 
 			    {node:article_node,title:article_title,content:article_content}, 
 			    //发给php的数据有两项，分别是上面传来的u和p
@@ -30,9 +30,7 @@
 			    	}
 			    },
 			    error: function(XMLHttpRequest, textStatus, errorThrown) {
-			    	alert(XMLHttpRequest.status);
-			    	alert(XMLHttpRequest.readyState);
-			    	alert(textStatus);
+			    	alert(XMLHttpRequest.status+"\n"+XMLHttpRequest.readyState+"\n"+textStatus);
 			    }})
 		}
 	</script>
@@ -43,6 +41,7 @@
 	<!-- <form action="" method="post"> -->
 	<p>标题：<input type="text" id="title"></p>
 	<p>分类：<input type="text" id="node"></p>
+	<p>图片：<input type="file" name="file" value="上传" /></p>
 	<p>
 		<!-- 加载编辑器的容器 -->
 		<!-- 以下脚本中增加文本为初始化内容 -->
